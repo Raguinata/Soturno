@@ -1,0 +1,166 @@
+@import '../../components/variaveis/';
+
+.pagina-contato {
+    height: calc(auto - 40px);
+    margin: 20px;
+    background-image: url("../../../public/assets/images/contato/background-meninaduascaras-contato.png"), url("../../../public/assets/images/contato/background-florazul-contato.png");
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    background-size: 100% auto;
+
+    section.contato {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        main.contato {
+            margin-top: 40px;
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            pre.contato {
+                color: $cor-do-objetos;
+                font: $almendra-32;
+                width: 100%;
+                height: 100%;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+
+            h1.contato-tituloReino {
+                color: $cor-do-objetos;
+                font: $oldEnglish-48;
+            }
+
+            figure.contato {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                img.contato-brasaoreinos {
+                    width: auto;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 3000px) {
+
+    .pagina-contato {
+        height: auto;
+
+        section.contato {
+
+            main.contato {
+
+                pre.contato {
+                    font: $almendra-64;
+                }
+
+                h1.contato-tituloReino {
+                    font: $oldEnglish-80;
+                }
+
+                figure.contato {
+
+                    img.contato-brasaoreinos {
+                        height: 416.67px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+
+    .pagina-contato {
+
+        section.contato {
+
+            main.contato {
+
+                pre.contato {
+                    font: $almendra-24;
+                }
+
+                h1.contato-tituloReino {
+                    font: $oldEnglish-40;
+                }
+
+                figure.contato {
+
+                    img.contato-brasaoreinos {
+                        height: 208.33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+
+    .pagina-contato {
+
+        section.contato {
+
+            main.contato {
+
+                pre.contato {
+                    font: $almendra-12;
+                }
+
+                h1.contato-tituloReino {
+                    font: $oldEnglish-28;
+                }
+
+                figure.contato {
+
+                    img.contato-brasaoreinos {
+                        height: 145.83px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Apple Watch
+@media (max-width: 170px) {
+
+    .pagina-contato {
+
+        section.contato {
+
+            main.contato {
+
+                pre.contato {
+                    font: $almendra-12;
+                }
+
+                h1.contato-tituloReino {
+                    font: $oldEnglish-20;
+                }
+
+                figure.contato {
+
+                    img.contato-brasaoreinos {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

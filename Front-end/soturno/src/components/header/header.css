@@ -1,0 +1,117 @@
+.header-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-header .figure-header {
+  width: 365px;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.header-header .figure-header .a-header-logo {
+  text-decoration: none;
+}
+.header-header .figure-header .img-header {
+  width: 100%;
+  height: 100%;
+}
+.header-header .figure-header .header-titulo-logo {
+  display: flex;
+  align-items: center;
+  font: 6.4rem "Almendra Display";
+  color: #9e9e9e;
+}
+.header-header .nav-header {
+  width: auto;
+  display: flex;
+  gap: 50px;
+}
+.header-header .nav-header .a-header {
+  text-decoration: none;
+  color: #9e9e9e;
+  font: 3.6rem "Almendra Display";
+}
+.header-header .nav-header .a-header:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (min-width: 3000px) {
+  .header-header .figure-header {
+    width: 736px;
+  }
+  .header-header .figure-header .img-header {
+    width: 100%;
+    height: 100%;
+  }
+  .header-header .figure-header .header-titulo-logo {
+    font: 12.8rem "Almendra Display";
+  }
+  .header-header .nav-header {
+    flex-wrap: wrap;
+  }
+  .header-header .nav-header .a-header {
+    font: 6.6rem "Almendra Display";
+  }
+}
+@media (max-width: 1000px) {
+  .header-header {
+    flex-direction: column-reverse;
+  }
+  .header-header .figure-header {
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 20px;
+    width: 137px;
+    height: auto;
+  }
+  .header-header .figure-header .img-header {
+    width: 100%;
+    height: 100%;
+  }
+  .header-header .figure-header .titulo-logo {
+    margin: 0px;
+  }
+  .header-header .nav-header {
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 530px) {
+  .header-header .figure-header {
+    width: 102.75px;
+  }
+  .header-header .figure-header .img-header {
+    width: 100%;
+    height: 100%;
+  }
+  .header-header .figure-header .header-titulo-logo {
+    font: 4.8rem "Almendra Display";
+  }
+  .header-header .nav-header {
+    flex-wrap: wrap;
+  }
+  .header-header .nav-header .a-header {
+    font: 2.6rem "Almendra Display";
+  }
+}
+@media (max-width: 300px) {
+  .header-header .figure-header {
+    width: 51.38px;
+  }
+  .header-header .figure-header .img-header {
+    width: 100%;
+    height: 100%;
+  }
+  .header-header .figure-header .header-titulo-logo {
+    font: 2.4rem "Almendra Display";
+  }
+  .header-header .nav-header .a-header {
+    font: 1.6rem "Almendra Display";
+  }
+}/*# sourceMappingURL=header.css.map */

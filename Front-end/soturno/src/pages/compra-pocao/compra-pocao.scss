@@ -1,0 +1,432 @@
+@import '../../components/variaveis/';
+
+.pagina-compra-pocao {
+    height: calc(130vh - 40px);
+    margin: 20px;
+
+
+    .section-compra-pocao {
+        overflow-y: hidden;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-compra-pocao {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+
+            .figure-compra-pocao {
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+                width: 35%;
+                height: 100%;
+                border: 1px solid $cor-do-objetos;
+            }
+
+            .section-compra-pocao-titulo {
+                padding: 0px;
+                width: 60%;
+                border: none;
+
+                .article-compra-pocao-titulo {
+                    width: 100%;
+                    border: 1px solid $cor-do-objetos;
+
+                    .h1-compra-pocao {
+                        text-align: center;
+                        font: $almendra-64;
+                        color: $cor-do-objetos;
+                        margin: 0px;
+                    }
+
+                }
+
+                .section-compra-pocao-direito {
+                    padding: 0px;
+                    height: 89%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 40px;
+
+
+                    .article-compra-pocao-efeito,
+                    .article-compra-pocao-ingredientes {
+                        border: 1px solid $cor-do-objetos;
+                        width: 50%;
+                        height: 90%;
+                        margin-top: 30px;
+                        padding: 5px;
+                        font: $almendra-34;
+                        color: $cor-do-objetos;
+
+                        .pre-compra-pocao {
+
+                            font: $almendra-34;
+                            color: $cor-do-objetos;
+                            white-space: pre-wrap;
+                            word-wrap: break-word;
+
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+
+        .footer-compra-pocao {
+            width: 97.5%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+
+            .button-compraPocao {
+                min-width: 290px;
+            }
+
+            .section-compra-pocao-footer-titulo {
+                padding: 10px 0px;
+                width: 70%;
+                border: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .div-compra-pocao-footer-cima {
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+
+                    .h1-compra-pocao-mago {
+                        font: $almendra-44;
+                        color: $cor-do-objetos;
+                        margin: 0px;
+                    }
+
+                    .h2-compra-pocao-mago {
+                        font: $babylonica-44;
+                        color: $cor-do-objetos;
+                        margin: 0px;
+                    }
+
+                }
+
+                .div-compra-pocao-footer-baixo {
+                    align-items: center;
+                    display: flex;
+                    width: 100%;
+
+                    .h3-compra-pocao-preco {
+                        font: $almendra-44;
+                        color: $cor-do-objetos;
+                        margin: 0px;
+                    }
+
+                    .h4-compra-pocao-preco {
+                        font: $arbutus-36;
+                        color: $cor-do-objetos;
+                        margin: 0px;
+                    }
+
+                }
+            }
+
+            .section-compra-pocao-botao {
+                margin: 0px;
+                padding: 35px 0px 0px 63px;
+                border: none;
+                width: 30%;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .pagina-compra-pocao {
+        height: auto;
+
+        .main-compra-pocao {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+
+            .figure-compra-pocao{
+                min-width: 300px;
+                margin-bottom: 40px;
+
+                
+            }
+
+            .section-compra-pocao-titulo {
+                    width: 1000px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .h1-compra-pocao {
+                        min-width: 405px;
+                    }
+    
+
+                .section-compra-pocao-direito {
+                    width: 100%;
+
+                    .article-compra-pocao-efeito,
+                    .article-compra-pocao-ingredientes {
+                        width: 100%;
+                        height: 100%;
+
+                        .p-compra-pocao{
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-compra-pocao {
+
+        .footer-compra-pocao {
+            flex-direction: column;
+            align-items: center;
+
+            .section-compra-pocao-botao {
+                min-width: 150px;
+                padding: 0px;
+
+                .button-compraPocao {
+                    width: 100%;
+                    min-width: 150px;
+                }
+
+            }
+        }
+    }
+    }
+}
+
+
+    
+
+@media (max-width: 770px) {
+
+    .pagina-compra-pocao {
+        
+    
+        .section-compra-pocao {
+            
+    
+            .main-compra-pocao {
+                
+    
+                .figure-compra-pocao {
+                    
+                }
+    
+                .section-compra-pocao-titulo {
+                    width: 100%;
+    
+                    .article-compra-pocao-titulo {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-start;
+    
+                        .h1-compra-pocao {
+                            font: $almendra-24;
+                            width: 100%;
+                            height: auto;
+                            text-align: center;
+                            min-width: 300px;
+                            
+                        }
+    
+                    }
+
+                    .section-compra-pocao-direito {
+                        
+    
+    
+                        .article-compra-pocao-efeito,
+                        .article-compra-pocao-ingredientes {
+                            font: $almendra-20;
+ 
+
+                            .pre-compra-pocao{
+                                font: $almendra-20;
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+            
+            .footer-compra-pocao {
+                
+    
+                .button-compraPocao {
+                    
+                }
+    
+                .section-compra-pocao-footer-titulo {
+                    
+    
+                    .div-compra-pocao-footer-cima {
+                        
+    
+                        .h1-compra-pocao-mago {
+                            font: $almendra-24;
+                            
+                        }
+    
+                        .h2-compra-pocao-mago {
+                            font: $babylonica-36;
+                            
+                        }
+    
+                    }
+    
+                    .div-compra-pocao-footer-baixo {
+                        
+    
+                        .h3-compra-pocao-preco {
+                            font: $almendra-30;
+                            
+                        }
+    
+                        .h4-compra-pocao-preco {
+                            font: $arbutus-20;
+                            
+                        }
+    
+                    }
+                }
+    
+                .section-compra-pocao-botao {
+                    
+                    width: 100%;
+                }
+            }
+
+            }
+        }
+    
+}
+
+@media (max-width: 340px) {
+
+    .pagina-compra-pocao {
+        
+    
+        .section-compra-pocao {
+            
+    
+            .main-compra-pocao {
+                
+    
+                .figure-compra-pocao {
+                    
+                }
+    
+                .section-compra-pocao-titulo {
+                    width: 100%;
+    
+                    .article-compra-pocao-titulo {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-start;
+    
+                        .h1-compra-pocao {
+                            font: $almendra-16;
+                            width: 100%;
+                            height: auto;
+                            text-align: center;
+                            min-width: 100px;
+                            
+                        }
+    
+                    }
+
+                    .section-compra-pocao-direito {
+                        
+    
+    
+                        .article-compra-pocao-efeito,
+                        .article-compra-pocao-ingredientes {
+                            font: $almendra-12;
+ 
+
+                            .pre-compra-pocao{
+                                font: $almendra-12;
+                            }
+                        }
+    
+                    }
+                }
+            }
+
+            
+            .footer-compra-pocao {
+                
+    
+                .button-compraPocao {
+                    
+                }
+    
+                .section-compra-pocao-footer-titulo {
+                    
+    
+                    .div-compra-pocao-footer-cima {
+                        
+    
+                        .h1-compra-pocao-mago {
+                            font: $almendra-16;
+                            
+                        }
+    
+                        .h2-compra-pocao-mago {
+                            font: $babylonica-22;
+                            
+                        }
+    
+                    }
+    
+                    .div-compra-pocao-footer-baixo {
+                        
+    
+                        .h3-compra-pocao-preco {
+                            font: $almendra-16;
+                            
+                        }
+    
+                        .h4-compra-pocao-preco {
+                            font: $arbutus-15;
+                            
+                        }
+    
+                    }
+                }
+    
+                .section-compra-pocao-botao {
+                    
+                    width: 100%;
+                }
+            }
+
+            }
+        }
+    
+}

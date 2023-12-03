@@ -1,0 +1,119 @@
+@import '../../components/variaveis/index';
+
+.pagina-cadastroFeitico {
+    background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 40%, 40%;
+    height: 100vh;
+    padding: 20px;
+
+    section.cadastroFeitico {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1.cadastroFeitico {
+            font: $oldEnglish-96;
+            color: white;
+            margin: 0px;
+        }
+
+        form.cadastroFeitico {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            input.cadastroFeitico {
+                width: 48%;
+                height: 70px;
+                font: $almendra-44;
+                color: white;
+                background: transparent;
+                border: none;
+                border-bottom: 4px solid white;
+            }
+        }
+
+        button.cadastroFeitico {
+            margin-top: 40px;
+            min-width: 210px;
+            font: $oldEnglish-48;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .pagina-cadastroFeitico {
+        height: 125vh;
+
+        section.cadastroFeitico {
+
+            form.cadastroFeitico {
+
+                input.cadastroFeitico {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .pagina-cadastroFeitico {
+        height: auto;
+
+        section.cadastroFeitico {
+
+            h1.cadastroFeitico {
+                font: $oldEnglish-36;
+            }
+
+            form.cadastroFeitico {
+
+                input.cadastroFeitico {
+                    font: $almendra-30;
+                }
+            }
+
+            button.cadastroFeitico {
+                width: 100%;
+                min-width: 120px;
+                font: $oldEnglish-30;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+
+    .pagina-cadastroFeitico {
+
+        section.cadastroFeitico {
+
+            h1.cadastroFeitico {
+                font: $oldEnglish-30;
+            }
+
+            form.cadastroFeitico {
+
+                input.cadastroFeitico {
+                    font: $almendra-20;
+                }
+            }
+
+            button.cadastroFeitico {
+                width: 100%;
+                min-width: 100px;
+                font: $oldEnglish-23;
+            }
+        }
+    }
+}

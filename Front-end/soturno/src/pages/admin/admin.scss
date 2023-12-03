@@ -1,0 +1,67 @@
+@import '../../components/variaveis/';
+
+// As configurações de cor, altura , largura e padding do body estão no global.css
+
+.pagina-admin {
+    height: calc(100vh - 40px);
+    margin: 20px;
+    background-image: url("../../../public/assets/images/LandingPage/background-menina-landingpage.png"), url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+    background-size: 750px 100%, 750px 70%; // Largura em % da primeira imagem é 55%.
+}
+
+section.admin {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $cor-do-objetos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    main.admin {
+        margin-top: 8%;
+        height: auto;
+        width: 73.30%;
+
+        p.admin {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: $cor-do-objetos;
+            font: $almendra-32;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .pagina-admin {
+        background-image: url("../../../public/assets/images/LandingPage/background-florazul-landingpage.png");
+        background-position: left bottom;
+        background-size: 100% 100%;
+        height: 130vh;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .pagina-admin {
+        height: 100%;
+    }
+
+    section.admin {
+        padding: 10px;
+
+        main.admin {
+
+
+            p.admin {
+                font: $almendra-16;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+@import './components/variaveis/index';
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Arbutus&family=Babylonica&display=swap');
+
+@font-face {
+    font-family: 'Old English';
+    src: url("../public/assets/fonts/Old\ English.ttf");
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* 
+    Com o font-size em 62.5%, multiplicando pelo tamanho padrão da fonte que é 16px
+    Teriamos 16*0,625 = 10 e com isso 1 rem equivale a 10px ao invez de 1rem valer 16px
+    0.1rem = 1px
+    1rem = 10px
+    10rem = 100px
+    100rem = 1000px 
+    Desta forma fica muito mais facil de fazer as medidas relativas das letras
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    background-color: #101010;
+}
+
+/* A fonte da letra está configurada nos arquivos das paginas pois
+não estou conseguindo configurar a font aqui :) */
+
+button {
+    width: 20%;
+    height: 90px;
+    margin: 40px 0px;
+    font: $oldEnglish-48;
+    background-color: #BCBCBC;
+    border-radius: 10px;
+    border: none;
+
+    // width: 360px;
+    // height: 90px;
+    // border-radius: 10px;
+    // border: none;
+    // background-color: #BCBCBC;
+}
+
+button:hover {
+    background-color: #A8A8A8;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    .botao {
+        margin: 20px;
+        min-width: 220px;
+        font: $oldEnglish-48;
+    }
+}
+
+
+@media (min-width: 3000px) {
+
+    button {
+        font: $oldEnglish-80;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .botoes {
+        flex-direction: column;
+    
+        .botao {
+            margin: 20px;
+            min-width: 150px;
+            font: $oldEnglish-30;
+        }
+    }
+
+}
+
+@media (max-width: 330px) {
+
+
+    .botoes {
+        flex-direction: column;
+    
+        .botao {
+            margin: 20px;
+            min-width: 110px;
+            font: $oldEnglish-23;
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 50px;
+        font: $oldEnglish-28;
+    }
+}

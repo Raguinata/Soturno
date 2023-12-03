@@ -1,0 +1,85 @@
+@import '../../components/variaveis/';
+
+.pagina-pocao {
+    height: auto;
+    margin: 20px;
+
+
+    section.pocao {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1.pocao {
+            color: $cor-do-objetos;
+            font: $oldEnglish-128;
+            margin: 0;
+            text-align: center;
+        }
+
+        div.pocao-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: none;
+            width: 100%;
+            height: auto;
+
+            
+
+        }
+
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .pagina-pocao {
+
+        section.pocao {
+
+            h1.pocao {
+                font: $oldEnglish-96;
+            }
+
+            div.pocao-cards {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+@media (max-width: 330px) {
+
+    .pagina-pocao {
+
+        section.pocao {
+
+            h1.pocao {
+                font: $oldEnglish-48;
+            }
+        }
+    }
+}
+
+//Apple Watch
+@media (max-width: 170px) {
+
+    .pagina-pocao {
+
+        section.pocao {
+
+            h1.pocao {
+                font: $oldEnglish-30;
+            }
+        }
+    }
+    
+}

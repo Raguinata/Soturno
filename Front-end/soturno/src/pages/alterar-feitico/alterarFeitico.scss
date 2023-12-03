@@ -1,0 +1,169 @@
+@import '../../components/variaveis/index';
+
+.pagina-alterarFeitico {
+    background-image: url("../../../public/assets/images/global/background-florazul.png"), url("../../../public/assets/images/global/background-florvermelha.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 40%, 40%;
+    height: 100vh;
+    padding: 20px;
+
+    section.alterarFeitico {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1.alterarFeitico {
+            font: $oldEnglish-96;
+            color: white;
+            margin: 0px;
+        }
+
+        form.alterarFeitico {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            div.alterarFeitico {
+                width: 48%;
+                height: 70px;
+                display: flex;
+
+                button.alterarFeitico-ok {
+                    width: 15%;
+                    min-width: 100px;
+                    height: 100%;
+                    margin: 0px;
+                }
+
+                input.alterarFeitico {
+                    width: 85%;
+                }
+            }
+
+            input.alterarFeitico {
+                width: 48%;
+                height: 70px;
+                font: $almendra-44;
+                color: white;
+                background: transparent;
+                border: none;
+                border-bottom: 4px solid white;
+            }
+        }
+
+        button.alterarFeitico {
+            margin-top: 40px;
+            min-width: 210px;
+            font: $oldEnglish-48;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .pagina-alterarFeitico {
+        height: 125vh;
+
+        section.alterarFeitico {
+
+            form.alterarFeitico {
+
+                div.alterarFeitico {
+                    width: 100%;
+                }
+
+                input.alterarFeitico {
+                    width: 100%;
+                }
+
+                input.alterarFeitico {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 530px) {
+    .pagina-alterarFeitico {
+        height: auto;
+
+        section.alterarFeitico {
+
+            h1.alterarFeitico {
+                font: $oldEnglish-36;
+            }
+
+            form.alterarFeitico {
+
+                input.alterarFeitico {
+                    font: $almendra-30;
+                }
+
+                div.alterarFeitico {
+
+
+                    button.alterarFeitico-ok {
+                        min-width: 50px;
+                        font: $oldEnglish-30;
+                    }
+                }
+            }
+
+            button.alterarFeitico {
+                width: 100%;
+                min-width: 120px;
+                font: $oldEnglish-30;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+
+    .pagina-alterarFeitico {
+
+
+        section.alterarFeitico {
+
+            h1.alterarFeitico {
+                font: $oldEnglish-30;
+            }
+
+            form.alterarFeitico {
+
+                input.alterarFeitico {
+                    font: $almendra-20;
+                }
+
+                div.alterarFeitico {
+                    flex-direction: column;
+                    height: 100px;
+
+                    button.alterarFeitico-ok {
+                        height: 50px;
+                        font: $oldEnglish-23;
+                    }
+
+                    input.alterarFeitico {
+                        width: 85%;
+                    }
+                }
+            }
+
+            button.alterarFeitico {
+                width: 100%;
+                min-width: 100px;
+                font: $oldEnglish-23;
+            }
+        }
+    }
+}

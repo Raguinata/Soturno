@@ -1,0 +1,115 @@
+@import '../../components/variaveis/';
+
+.pagina-compra-feitico {
+    height: calc(auto - 40px);
+    margin: 20px;
+    background-image: url("../../../public/assets/images/CompraFeitico/background-comprafeitico.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+
+    section.card-feitico {
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $cor-do-objetos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        article.card-feitico {
+            width: 90%;
+
+            h1.card-feitico {
+                text-align: center;
+                color: $cor-do-objetos;
+                font: $almendra-64;
+                margin: 0;
+            }
+
+            p.card-feitico {
+                text-align: center;
+                color: #F80000;
+                font: $almendra-32;
+                margin: 0;
+            }
+        }
+
+        main.card-feitico {
+            margin-top: 40px;
+            width: 95%;
+            height: auto;
+            border: 1px solid $cor-do-objetos;
+        }
+    }
+}
+
+//iPhone 13 PRO MAX
+@media (max-width: 430px) {
+
+    .pagina-compra-feitico {
+        background-size: 100%;
+
+        section.card-feitico {
+
+            article.card-feitico {
+
+                h1.card-feitico {
+                    font: $almendra-48;
+
+                }
+
+                p.card-feitico {
+                    font: $almendra-24;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+
+    .pagina-compra-feitico {
+
+        section.card-feitico {
+            padding: 0px;
+
+            article.card-feitico {
+
+                h1.card-feitico {
+                    font: $almendra-28;
+
+                }
+
+                p.card-feitico {
+                    font: $almendra-16;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 180px) {
+
+    .pagina-compra-feitico {
+
+        section.card-feitico {
+
+            article.card-feitico {
+
+                h1.card-feitico {
+                    font: $almendra-24;
+
+                }
+
+                p.card-feitico {
+                    font: $almendra-12;
+
+                }
+            }
+        }
+    }
+}

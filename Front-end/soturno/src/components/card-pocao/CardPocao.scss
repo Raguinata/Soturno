@@ -1,0 +1,161 @@
+@import '../variaveis/index';
+
+.section-card-pocao:hover{
+    background-color: rgb(0,0,0);
+    cursor: pointer;
+}
+
+.section-card-pocao {
+    width: 50%;
+    min-height: 350px;
+    height: auto;
+    border: 1px solid $cor-do-objetos;
+    position: relative;
+
+    .h1-card-pocao {
+        height: auto;
+        text-align: center;
+        margin-bottom: 10px;
+        color: $cor-do-objetos;
+        font: $almendra-48;
+    }
+
+    .img-card-pocao {
+        position: absolute;
+        
+    }
+
+    .img-card-pocao-inferior-esquerdo {
+        left: 5px;
+        bottom: 5px;
+        transform: scale(-1, 1); // Inverter a imagem(espelhar)
+    }
+
+    .img-card-pocao-inferior-direito {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    .img-card-pocao-superior-esquerdo {
+        left: 5px;
+        top: 5px;
+        transform: scale(-1);
+    }
+
+    .img-card-pocao-superior-direito {
+        right: 5px;
+        top: 5px;
+        transform: scale(1, -1);
+    }
+
+    .section-card-pocao-conteudo {
+        display: flex;
+        flex-direction: row;
+        border: none;
+
+        .img-card-pocao-pocao {
+            width: 130px;
+            position: initial;
+            margin: 15px;
+        }
+
+        .p-card-pocao {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            color: $cor-do-objetos;
+            font: $almendra-28;
+        }
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .section-card-pocao {
+        width: 100%; 
+    }
+
+}
+
+
+
+
+@media (max-width: 568px) {
+
+    .section-card-pocao {
+        height: auto;
+        padding: 40px 0px;
+
+        .section-card-pocao-conteudo {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+
+}
+
+//iPhone 5
+@media (max-width: 330px) {
+
+    .section-card-pocao {
+
+        .h1-card-pocao {
+            font: $almendra-24;
+        }
+        
+
+        .section-card-pocao-conteudo {
+            
+            .img-card-pocao-pocao {
+                width: 100px;
+                
+            }
+
+            .p-card-pocao {
+                font: $almendra-20;
+
+            }
+        }
+    }
+    
+}
+
+//Apple Watch
+@media (max-width: 170px) {
+
+    .section-card-pocao {
+        min-height: 220px;
+        padding: 30px 0px;
+
+        .h1-card-pocao {
+            font: $almendra-12;
+        }
+
+        .img-card-pocao {
+            width: 20px;
+            height: 20px;
+            
+        }
+
+        .section-card-pocao-conteudo {
+            
+            .img-card-pocao-pocao {
+                width: 70%;
+                height: auto;
+                
+            }
+
+            .p-card-pocao {
+                display: none;
+            }
+        }
+
+    }
+    
+}
+
